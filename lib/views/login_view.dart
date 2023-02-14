@@ -82,6 +82,12 @@ class _LoginViewState extends State<LoginView> {
                     },
                     child: const Text('Login'),
                   ),
+                  TextButton(
+                    onPressed: () {
+                      FirebaseAuth.instance.signOut();
+                    },
+                    child: const Text('Logout'),
+                  )
                 ],
               );
             default:
