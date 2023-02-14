@@ -76,12 +76,6 @@ class _LoginViewState extends State<LoginView> {
           ),
           TextButton(
             onPressed: () {
-              FirebaseAuth.instance.signOut();
-            },
-            child: const Text('Logout'),
-          ),
-          TextButton(
-            onPressed: () {
               Navigator.of(context).pushNamedAndRemoveUntil(
                 '/register/',
                 (route) => false,
